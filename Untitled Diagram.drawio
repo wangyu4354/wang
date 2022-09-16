@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-14T08:46:28.309Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="Zfl0SPcw1LZxSUMqEFUa" version="17.4.6" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-16T07:52:28.051Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="4LD6JOeStAACjF_urrTB" version="20.3.0" type="github">
   <diagram id="qTpja4i306EYDg-Sprqq" name="Page-1">
-    <mxGraphModel dx="2901" dy="677" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2845" dy="713" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -108,6 +108,67 @@
         </mxCell>
         <mxCell id="hW0sUhkjOA8jocDv_5Ry-47" value="远程根据手机号查询 userId" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="-360" y="200" width="160" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="zZUZRe-m0uHpfMevdaNm-1" value="同伴生产数据库&lt;br&gt;hogwart" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-1170" y="870" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zZUZRe-m0uHpfMevdaNm-2" value="同伴生产数据库&lt;br&gt;hogwart-bbk" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-520" y="870" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zZUZRe-m0uHpfMevdaNm-3" value="天才星数据库&lt;br&gt;answer" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-1170" y="1070" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zZUZRe-m0uHpfMevdaNm-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="zZUZRe-m0uHpfMevdaNm-4" target="zZUZRe-m0uHpfMevdaNm-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="zZUZRe-m0uHpfMevdaNm-4" value="天才星数据库&lt;br&gt;answer-bbk" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="-520" y="1070" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="zZUZRe-m0uHpfMevdaNm-5" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="zZUZRe-m0uHpfMevdaNm-3" target="zZUZRe-m0uHpfMevdaNm-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1140" y="1040" as="sourcePoint" />
+            <mxPoint x="-1080" y="990" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZUZRe-m0uHpfMevdaNm-7" value="老师助手通过sync/teacher/info/save/{}&lt;br&gt;进行保存&lt;br&gt;&lt;br&gt;userId一样" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-1260" y="980" width="230" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zZUZRe-m0uHpfMevdaNm-8" value="" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="zZUZRe-m0uHpfMevdaNm-2" target="zZUZRe-m0uHpfMevdaNm-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-790" y="890" as="sourcePoint" />
+            <mxPoint x="-740" y="840" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZUZRe-m0uHpfMevdaNm-9" value="定时任务：&lt;br&gt;HTTP调用：1、查询未同步到bbk的老师（限制最多一个100个）&lt;br&gt;hogwart-bbk本地处理2、bbk数据库保存手机号与teacherUid对应&lt;br&gt;HTTP调用：3、修改hogwart老师标识：标记为已同步" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-890" y="820" width="370" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="zZUZRe-m0uHpfMevdaNm-11" value="会去查询对应手机号的teacherUid，并且使用" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-580" y="980" width="260" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="zZUZRe-m0uHpfMevdaNm-12" value="" style="shape=link;endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="zZUZRe-m0uHpfMevdaNm-3" target="zZUZRe-m0uHpfMevdaNm-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-880" y="1140" as="sourcePoint" />
+            <mxPoint x="-830" y="1090" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZUZRe-m0uHpfMevdaNm-13" value="原有逻辑" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zZUZRe-m0uHpfMevdaNm-12">
+          <mxGeometry x="-0.278" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZUZRe-m0uHpfMevdaNm-15" value="" style="shape=link;endArrow=classic;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="zZUZRe-m0uHpfMevdaNm-3" target="zZUZRe-m0uHpfMevdaNm-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1060" y="1040" as="sourcePoint" />
+            <mxPoint x="-670" y="1040" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZUZRe-m0uHpfMevdaNm-16" value="之间同步可以多次同步，不影响" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="zZUZRe-m0uHpfMevdaNm-15">
+          <mxGeometry x="-0.278" y="4" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="zZUZRe-m0uHpfMevdaNm-17" value="&lt;b&gt;已同步老师历史数据，尽可能的修改hogwart数据库处理&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-370" y="930" width="320" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
